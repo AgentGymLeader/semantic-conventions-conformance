@@ -125,7 +125,7 @@ classes than the row, the row says so.
 | `haystack` | workflow, invoke_agent, automatic_tool_calling | `native`, `openinference`<br>no `openllmetry`: does not support Haystack 3 |
 | `langchain` | workflow, invoke_agent, automatic_tool_calling, retrieval | `opentelemetry-langchain`, `openinference`, `openllmetry` |
 | `litellm` | inference, streaming, tool_calling, structured_output, multimodal, embeddings | `native`, `openinference`, `openllmetry` |
-| `llama-index` | workflow, invoke_agent, automatic_tool_calling, retrieval | `native`, `openinference`<br>no `openllmetry`:  does not record anything for modern versions |
+| `llama-index` | workflow, invoke_agent, automatic_tool_calling, retrieval | `opentelemetry-llama-index`, `native`, `openinference`<br>no `openllmetry`:  does not record anything for modern versions |
 | `mistral` | inference, streaming, tool_calling, structured_output, multimodal, embeddings | `native`, `openinference`<br>no `openllmetry`: does not support mistralai 3's client namespace |
 | `ollama` | inference, streaming, tool_calling, structured_output, multimodal, embeddings | `openinference`, `openllmetry` |
 | `openai` | inference, streaming, tool_calling, server_tool_calling, structured_output, multimodal, embeddings. server_tool_calling uses the Responses API, the only one with hosted tools | `opentelemetry-openai`, `opentelemetry-langchain-openai`, `openinference`, `openllmetry` |
